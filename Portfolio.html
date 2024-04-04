@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/png/asd.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    
+                    <li><a href="#services">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Bilawal</span><br>Feroze From Pakistan</h1>
+            </div>
+        </div>
+
+
+    </div>
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/WhatsApp Image 2024-01-26 at 10.32.00 PM.jpeg"></div>
+                    <div class="about-col-2">
+                                <h1 class="sub-title">About Me</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatem beatae doloremque tenetur consequatur ex quia, at esse perspiciatis laboriosam dicta, nesciunt eveniet cupiditate, expedita similique doloribus dignissimos natus accusantium.</p>
+                                <div class="tab-titles">
+                                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                                </div>
+                                <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+                                        <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                                        <li><span>Web Development</span><br>Web App Development</li>
+                                        <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="Experience">
+                                    <ul>
+                                        <li><span>2023-Present</span><br>Too Good In Less Time</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="Education">
+                                    <ul>
+                                        <li><span>2023-2024</span><br>First Semester Completion From Dha Suffa University</li>
+                                        
+                                    </ul>
+                                </div>
+                    
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!--Services-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+             <div class="services-list">
+                <div style="float: left;">
+                    <h2>Web Design</h2>
+                    <img src="Images/web.png" width="87%">
+                    
+                </div>
+                <div style="float: right;">
+                <h2>Facebook Design</h2>
+                <img src="Images/facebook.png" width="100%">
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <!--Contact-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">My Contact</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>contact@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>03176995544</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://pk.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+<script >
+
+        alert('welcome to my portfolio');
+
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+                
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+
+</script>
+<script src="https://kit.fontawesome.com/387189a85f.js" crossorigin="anonymous"></script>
+</body>
+</html>
